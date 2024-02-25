@@ -1,0 +1,84 @@
+/* Example For Poppins Semi Bold 600 */
+
+/* .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  } */
+
+  /* MONTSERRAT EXAMPLE FONTS */
+  /* .montserrat {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  } */
+
+/* NAVBAR: DONE */
+/* RESPONSIVE: Tommorow :D */
+
+/* LANDING PAGE:  */
+/* RESPONSIVE:  */
+
+/* MAIN CONTNENT:  */
+/* RESPONSIVE:  */
+
+/* CARDS:  */
+/* RESPONSIVE:  */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  font-weight: 500px;
+}
+
+/* NAVBAR CONTENT */
+
+.logo {
+  transform: translateY(10px);
+}
+
+.title-nav {
+  font-family: Montserrat, sans-serif;
+}
+
+.title-nav {
+  /* font-family: Montserrat, sans-serif;   */
+  transform: translateY(-10px);
+}
+
+nav {
+  overflow: auto;
+  z-index: 3;
+  width: auto;
+  height: 50px;
+  color: white;
+  background-color: #50727B ;
+  padding: 10px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 15px;
+  transform: translateY(5px);
+}
+
+li {
+  list-style: none;
+}
+
+ul li a{
+  color: rgb(187, 228, 230);
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+ul li a:hover {
+  color: rgb(113, 180, 154);
+}
+
+/* NAVBAR RESNPONSIVE */
