@@ -29,7 +29,7 @@
   margin: 0;
   padding: 0;
   font-family: Poppins, sans-serif;
-  font-weight: 500px;
+  font-weight: 400px;
 }
 
 /* NAVBAR CONTENT */
@@ -47,11 +47,18 @@
   transform: translateY(-10px);
 }
 
+/* LOGO WHILE 700px */
+
+.title-nav-700 {
+  display: none;
+}
+
 nav {
   overflow: auto;
-  z-index: 3;
+  z-index: 2;
+  position: relative;
   width: auto;
-  height: 50px;
+  height: 40px;
   color: white;
   background-color: #50727B ;
   padding: 10px;
@@ -61,6 +68,8 @@ nav {
 }
 
 ul {
+  z-index: 3;
+  position: static;
   display: flex;
   /* justify-content: space-between; */
   gap: 15px;
@@ -81,4 +90,29 @@ ul li a:hover {
   color: rgb(113, 180, 154);
 }
 
+/* IMAGE BG HOMEPAGE */
+
+.home-page .main-img-bg {
+  width: 97%;
+  height: 90vh;
+  background-color: #78A083;
+  padding: 20px;
+}
+
+/*  RESNPONSIVE */
+
 /* NAVBAR RESNPONSIVE */
+
+@media screen and (max-width: 700px) {
+  .title-nav h2 {
+    /* visibility: hidden; */
+    display: none;
+  }
+  .title-nav-700 {
+    display: flex;
+  }
+}
+
+/* @media screen and (min-width: 700px) {
+  COMMAND
+} */
