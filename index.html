@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./Assets/logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"  crossorigin>
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./Assets/logo.png" type="image/x-icon">
     <title>Yayasan Bale Budaya Bambu</title>
 </head>
 <body>
@@ -30,14 +32,27 @@
                 Yayasan Bale Budaya Bambu
             </h2>
         </div>
-        <ul>
-            <li><a href="#">Test-1</a></li>
-            <li><a href="#">Test-2</a></li>
-            <li><a href="#">Test-3</a></li>
-            <li><a href="#">Test-4</a></li>
+        <ul class="nav-gt">
+            <li class="nav-gt-ls"><a href="#">Home</a></li>
+            <li class="nav-gt-ls"><a href="#">About</a></li>
+            <li class="nav-gt-ls"><a href="#">History</a></li>
+            <li class="nav-gt-ls"><a href="#">Contact</a></li>
             <!-- <li><a href="#"></a></li> -->
         </ul>
+        <div class="button-hamburger">
+            <button class="hamburger"  onclick="navBar()">☰</button>
+        </div>
     </nav>
+    <div class="nav-res-container">
+        <nav class="nav-res-nav">
+            <ul class="navigation-bar-res">
+                <li class="nav-res-li"><a href="#">Home</a></li>
+                <li class="nav-res-li"><a href="#">About</a></li>
+                <li class="nav-res-li"><a href="#">History</a></li>
+                <li class="nav-res-li"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
     <!-- HOME PAGE -->
     <div class="home-page">
         <div class="main-img-bg">
@@ -48,15 +63,17 @@
                 width="100%" 
                 alt="1920x720 placeholder"> -->
             <!-- CONTENT CHANGE -->
-            <div class="main-content">
-                <div class="img-content">
+
+            <!-- <div class="main-content"> -->
+                <!-- <div class="img-content"> -->
                     <!-- https://placeholder.co/520x520 for temporary image -->
-                    <img 
-                        src="https://placeholder.co/520x520" 
-                        alt="520x520 placeholder" 
-                        class="main-image-content">
-                </div>
-            </div>
+                    <!-- <img  -->
+                        <!-- src="https://placeholder.co/520x520"  -->
+                        <!-- alt="520x520 placeholder"  -->
+                        <!-- class="main-image-content"> -->
+                <!-- </div> -->
+            <!-- </div> -->
+
             <div class="text-img">
                 <h3>Yayasan Bale Budaya Bambu</h3>
                 <h4>Role - Role - Role - Role</h4>
@@ -79,6 +96,7 @@
                     <h3>Title</h3>
                     <!-- hr optional -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque quia, assumenda quis facere eos molestias.</p>
+                    <a class="button-home" href="#">Button</a>
                 </div>
             </div>
         </div>
@@ -95,9 +113,10 @@
         <p>About Us / Disclaimer</p>
         <i>Lorem ipsum dolor sit amet consectetur.</i>
         
-        <hr>
+        <!-- <hr> -->
         <h3>© Yayasan Bale Budaya Bambu - 2024</h3>
     </footer>
+    
 </body>
 </html>
 

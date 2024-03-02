@@ -32,6 +32,8 @@
   font-weight: 400px;
 }
 
+
+
 /* NAVBAR CONTENT */
 
 .logo {
@@ -39,7 +41,8 @@
 }
 
 .title-nav {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", serif;
+  font-weight: 100px;
 }
 
 .title-nav {
@@ -54,40 +57,59 @@
 }
 
 nav {
+  border-bottom: 1px solid #535780;
   overflow: auto;
   z-index: 2;
   position: relative;
   width: auto;
   height: 40px;
-  color: white;
-  background-color: #50727B ;
+  color: rgb(238, 255, 239);
+  background-color: #35374B;
   padding: 10px;
   padding-top: 20px;
   display: flex;
   justify-content: space-around;
 }
 
-ul {
-  z-index: 3;
-  position: static;
+.nav-gt {
+  /* z-index: 3; */
+  /* position: static; */
   display: flex;
   /* justify-content: space-between; */
   gap: 15px;
   transform: translateY(5px);
 }
 
-li {
+.nav-gt-ls {
   list-style: none;
 }
 
-ul li a{
-  color: rgb(187, 228, 230);
+ul li a {
+  color: #7889a0;
   text-decoration: none;
   transition: 0.4s;
+  font-size: 17px;
 }
 
 ul li a:hover {
-  color: rgb(113, 180, 154);
+  color: #bbbbbb;
+}
+
+.hamburger {
+  border: none;
+  color: #bbbbbb;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  transform: translateY(-5px);
+  display: none;
+  background-color: transparent;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  color: white;
 }
 
 /* IMAGE BG HOMEPAGE */
@@ -95,7 +117,7 @@ ul li a:hover {
 .home-page .main-img-bg {
   width: 97%;
   height: 90vh;
-  background-color: #78A083;
+  background-color: #35374B;
   padding: 20px;
 }
 
@@ -103,15 +125,62 @@ ul li a:hover {
 
 /* NAVBAR RESNPONSIVE */
 
+.nav-res-container {
+  transition: 0.4s ease-in-out;
+  display: none; 
+  opacity: 0;
+  /* height: 0px; */
+  justify-content: center;
+}
+
+.nav-res-container .show {
+  display: flex;
+  opacity: 1;
+}
+
+.nav-res-nav {
+  border: none;
+  width: 100% ;
+  height: 100px;
+  display: fixed;
+  background-color: #2a2c3d;
+  border: none;
+}
+
+.navigation-bar-res {
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-res-li a {
+  padding: 5px;
+}
+
+
+@media screen and (max-width: 780px) {
+  nav {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 700px) {
+  .nav-gt {
+    display: none;
+  }
   .title-nav h2 {
     /* visibility: hidden; */
     display: none;
   }
-  .title-nav-700 {
+  .hamburger {
     display: flex;
   }
+  .title-nav-700 {
+    display: flex;
+    position: relative;
+    top: -10px;
+  }
 }
+
 
 /* @media screen and (min-width: 700px) {
   COMMAND
