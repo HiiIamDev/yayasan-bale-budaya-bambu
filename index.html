@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="./Assets/logo.png" type="image/x-icon">
@@ -49,27 +49,29 @@
             <img src="./Assets/logo.png" alt="logo"
                 style="width: 40px;" class="logo">
             <ul class="navigation-bar-res">
-                <li class="nav-res-li"><a href="#">Home</a></li>
+                <!-- <li class="nav-res-li"><a href="#">Home</a></li>
                 <li class="nav-res-li"><a href="#">About</a></li>
                 <li class="nav-res-li"><a href="#">History</a></li>
-                <li class="nav-res-li"><a href="#">Contact</a></li>
+                <li class="nav-res-li"><a href="#">Contact</a></li> -->
+
+                <li class="nav-res-li"><a href="#">Beranda</a></li>
+                <li class="nav-res-li"><a href="#">Tentang Kami</a></li>
+                <li class="nav-res-li"><a href="#">Berita</a></li>
+                <li class="nav-res-li"><a href="#">Kontak</a></li>
+                <li class="nav-res-li"><a href="#">Bergabung Dengan Kami </a></li>
             </ul>
             <button class="hamburger-on-nav"  onclick="navBar()">&#10006;</button>
         </nav>
     </div>
     <!-- HOME PAGE -->
     <div class="home-page">
-        <!-- <img 
-                class="img-bg"
-                src="./Assets/background.jpg"
-                width="100%" 
-                alt="1920x720 placeholder">  -->
+
         <div class="main-img-bg">
 
             <div class="text-img">
                 <h1>Yayasan Bale Budaya Bambu</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quod iste, fugit totam ea culpa suscipit.</p>
-                <div class="reactive-button">
+                <!-- <div class="reactive-button">
                     <div class="list-main">
                         <a href="#">Program</a>
                         <a href="#">Gallery</a>
@@ -77,19 +79,21 @@
                         <a href="#">Events</a>
                     </div>
                     <a href="#" class="button-main">Join Us</a>
-                </div>
+                </div> -->
                 <!-- Responsive -->
                 <div class="reactive-button resp">
                     <div class="list-main resp">
-                        <a href="#">Program</a>
-                        <a href="#">Galeri</a>
-                        <a href="#">Donasi</a>
-                        <a href="#">Acara</a>
-                        <a href="#">Bergabung</a>
+                        <a href="#programs"class="an">Program</a>
+                        <a href="#"class="an">Galeri</a>
+                        <a href="#"class="an">Donasi</a>
+                        <a href="#"class="an">Acara</a>
+                        <a href="#" class="an">Bergabung</a>
                     </div>
                 </div>
             </div>
+
         </div>
+
     </div>
 
     <br>
@@ -104,7 +108,7 @@
                     <!-- https://placeholder.co/420x520 placeholder image for temporary -->
                     <img src="https://placeholder.co/420x520" alt="420x520 placeholder" class="img-programs">
                 </div>
-                <div class="programs-content-section">
+                <div class="programs-content-section" id="programs">
                     <h3>Title</h3>
                     <!-- hr optional -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque quia, assumenda quis facere eos molestias.</p>
