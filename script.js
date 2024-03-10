@@ -4,6 +4,7 @@ function navBar() {
     menu.classList.toggle('show');
 }
 
+
 // function hiddenNav() {
 //     var navbar = document.querySelector('.nav-res-container')
 //     if (window.innerWidth >= 780) {
