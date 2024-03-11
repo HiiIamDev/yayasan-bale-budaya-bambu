@@ -210,6 +210,44 @@ ul li a:hover {
 
 /* PROGRAMS PAGE */
 
+.programs-image-section img {
+  width: 100%;
+}
+
+.programs {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cards-programs {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* padding: 10px; */
+  cursor: pointer;
+  margin: 5px;
+  width: 30%;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.programs-content-section {
+  padding: 10px;
+}
+
+
+
 
 
 
