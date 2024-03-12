@@ -146,10 +146,9 @@ ul li a:hover {
 
 
 
-/* IMAGE BG HOMEPAGE */
-/* .text-img {
-  /* hello world */
-/* }  */
+/* HOMEPAGE */
+
+
 
 .home-page {
   background-size: cover;
@@ -157,7 +156,7 @@ ul li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   /* background-color: #35374B; */
-  background-image: url(/Assets/background.jpg);
+  background-image: url(/Assets/background.png);
   z-index: 0;
   /* padding: 20px; */
 }
@@ -213,7 +212,29 @@ ul li a:hover {
   /* justify-content: space-around; */
 /* } */ 
 
+.next-btn {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(171, 171, 171);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.next-btn:hover {
+  background-color: gray;
+}
+
+
 /* PROGRAMS PAGE */
+
+.programs-next-btn {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
 
 .programs-image-section img {
   width: 100%;
@@ -250,7 +271,7 @@ ul li a:hover {
   /* justify-content: center; */
   /* padding: 10px; */
   cursor: pointer;
-  margin: 5px; 
+  margin: 10px; 
   width: 340px;
   height: auto;
   border: 1px solid gray;
@@ -261,7 +282,47 @@ ul li a:hover {
   padding: 10px;
 }
 
+.wrapper-button {
+  margin-top: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-home {
+  padding: 10px;
+  background-color: rgb(170, 170, 170);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.button-home:hover {
+  background-color: gray;
+}
+
 /* about page*/
+
+.button-about {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-about a {
+  text-decoration: none;
+  padding: 8px;
+  background-color: rgb(170, 170, 170);
+  color: white;
+  border-radius: 4px;
+  border: 1px solid gray;
+  transition: 0.4s;
+}
+
+.button-about a:hover {
+  background-color: gray;
+}
 
 .wrapper-ab {
   display: flex;
@@ -272,7 +333,7 @@ ul li a:hover {
 
 .about {
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .title-about {
@@ -305,12 +366,25 @@ ul li a:hover {
 
 /* event pages */
 
+.cards-event {
+  margin: 10px;
+  width: 340px;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.cards-event .image-event img {
+  width: 100%;
+}
+
 .event {
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .event .title-event {
+  /* padding: 10px; */
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -320,12 +394,79 @@ ul li a:hover {
 
 }
 
+.event .text-event {
+  padding: 10px;
+}
+
 .alias {
   font-size: 9px;
   color: gray;
 }
 
+.wrapper-event {
+  display: flex;
+  justify-content: flex-end;
+}
 
+.wrapper-event a {
+  text-decoration: none;
+  padding: 7px;
+  color: white;
+  background-color: rgb(170, 170, 170);
+  border: 1px solid gray;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.wrapper-event a:hover {
+  background-color: gray;
+}
+
+/* FOOTER */
+
+footer {
+  /* width: 204vh; */
+  width: 100%;
+  height: 10vh;
+  background-color: #171717;
+  color: #ecebeb;
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  /* padding: 10px; */
+}
+
+/* .flex-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 80%;
+}
+
+.flex-footer div {
+  width: 330px;
+  margin-bottom: 30px;
+} */
+
+/* .gr {
+  width: 33%;
+} */
+
+/* .anggota {
+  /* text-align: center; */
+/* } */
+.wrapper-cp {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-cp h4 {
+  color: #383d38;
+}
 /*  RESNPONSIVE */
 
 /* NAVBAR RESNPONSIVE */
@@ -349,14 +490,17 @@ ul li a:hover {
 }
 
 .nav-res-nav {
-  border: none;
+  /* border: none; */
+  border-bottom: 1px solid gray;
   width: 100% ;
   height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #ffffff;
-  border: none;
+  /* border: none; */
+  padding-bottom: 20px;
+  /* overflow: hidden; */
 }
 
 .nav-res-nav img {
@@ -388,12 +532,15 @@ ul li a:hover {
   width: 100%;
 }
 
-.reactive-button.resp .list-main.resp {
-  gap: 4px;
+.list-main.resp {
+  gap: 11px;
   /* width: 100%; */
   margin: 5px;
-  width: 50%;
+  width: 100%;
+  height: auto;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -418,16 +565,14 @@ ul li a:hover {
 /*  */
 
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
       .about {
         height: 80vh;
       }
-}
+} */
 
 @media screen and (max-width: 700px) {
-  .about {
-    height: 60vh;
-  }
+
   .nav-gt {
     display: none;
   }
@@ -437,9 +582,6 @@ ul li a:hover {
 }
 
 @media screen and (max-width: 500px) {
-  .about {
-    height: 50vh;
-  }
   .main-img-bg {
     width: 100%;
   }

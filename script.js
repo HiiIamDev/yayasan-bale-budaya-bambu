@@ -1,9 +1,7 @@
 
 function navBar() {
     var menu = document.querySelector('.nav-res-container');
-    var menuShow = document.querySelector('.nav-res-container.show')
     menu.classList.toggle('show');
-    menuShow.style.maxHeight = menuShow.scrollHeight + "px";
 }
 
 
