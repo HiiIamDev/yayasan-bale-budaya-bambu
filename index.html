@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="./Assets/logo.png" type="image/x-icon">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com"  crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+
+   <script src="https://kit.fontawesome.com/8092932667.js" crossorigin="anonymous"></script>
+
+    <!-- link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"  crossorigin> -->
+
     <script src="./script.js"></script>
     <link rel="stylesheet" href="./style.css">
+
+
     <title>Yayasan Bale Budaya Bambu</title>
 </head>
 <body>
@@ -35,13 +44,17 @@
                 <!-- dimasukin ke home<li class="nav-gt-ls"><a href="#">Donate</a></li> -->
                 <li class="nav-gt-ls"><a href="#">Kontak</a></li>
                 <!-- dimasukin ke home<li class="nav-gt-ls"><a href="#">Events</a></li> -->
-                <li class="nav-gt-ls"><a href="#">Bergabung Dengan Kami </a></li>
+                <div class="nav-join-ls">
+                    <li class="nav-gt-jn"><a href="#">Bergabung</a></li>
+                </div>
 
                 <!-- <li class="nav-gt-ls"><a href="#">Misi</a></li> -->
                 <!-- <li><a href="#"></a></li> -->
             </ul>
         <div class="button-hamburger">
-            <button class="hamburger"  onclick="navBar()">&#9776;</button>
+            <button class="hamburger" onclick="navBar()">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
     <div class="nav-res-container">
@@ -55,12 +68,14 @@
                 <li class="nav-res-li"><a href="#">Contact</a></li> -->
 
                 <li class="nav-res-li"><a href="#">Beranda</a></li>
-                <li class="nav-res-li"><a href="#about">Tentang Kami</a></li>
+                <li class="nav-res-li"><a href="#about">Tentang</a></li>
                 <li class="nav-res-li"><a href="#">Berita</a></li>
                 <li class="nav-res-li"><a href="#">Kontak</a></li>
                 <li class="nav-res-li"><a href="#">Bergabung Dengan Kami </a></li>
             </ul>
-            <button class="hamburger-on-nav"  onclick="navBar()">&#10006;</button>
+            <button class="hamburger-on-nav" onclick="navBar()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
         </nav>
     </div>
     <!-- HOME PAGE -->
@@ -226,10 +241,9 @@
         <br>
         <hr> -->
         <div class="wrapper-cp">
-            <h4>© Yayasan Bale Budaya Bambu - 2024</h4>
+            <h4><i class="fa-solid fa-copyright"></i> Yayasan Bale Budaya Bambu - 2024</h4>
         </div>
     </footer>
-    
 </body>
 </html>
 

@@ -90,6 +90,7 @@ nav {
   /* justify-content: space-between; */
   gap: 15px;
   transform: translateY(6px);
+  width: auto;
   /* align-items: center; */
 }
 
@@ -97,14 +98,63 @@ nav {
   list-style: none;
 }
 
-ul li a {
+.nav-join-ls {
+  height: 100%;
+}
+
+.nav-gt-ls a {
+/*  display: none;*/
+/*  position: relative;*/
+/*  top: 10px;*/
+}
+
+.nav-gt-jn {
+  list-style: none;
+/*  background-color: #78A083;*/
+/*  padding: 10px;*/
+/*  border: 3px;*/
+/*  color: white;*/
+}
+
+.nav-gt-jn a {
+  color: white;
+  background-color: #78A083;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+/*  border: 1px solid #50727B;*/
+}
+
+.nav-gt-jn a:hover {
+  background-color: #50727B;
+/*  border: 1px solid white;*/
+}
+
+.nav-gt-ls a {
+  list-style: none;
   color: #8999ac;
   text-decoration: none;
   transition: 0.4s;
   font-size: 18px;
+/*  display: none;*/
 }
 
-ul li a:hover {
+.nav-gt-ls a:hover {
+  color: #0f1410;
+}
+
+.nav-res-li a {
+  list-style: none;
+  color: #8999ac;
+  text-decoration: none;
+  transition: 0.4s;
+  font-size: 18px;
+/*  display: none;*/
+}
+
+.nav-res-li a:hover {
   color: #0f1410;
 }
 
@@ -114,7 +164,7 @@ ul li a:hover {
   width: 40px;
   height: 40px;
   font-size: 30px;
-  transform: translateY(5px);
+  transform: translateY(13px);
   display: none;
   background-color: transparent;
   transition: 0.4s;
@@ -217,13 +267,13 @@ ul li a:hover {
   padding: 15px;
   text-decoration: none;
   color: white;
-  background-color: rgb(171, 171, 171);
+  background-color: #78A083;
   border-radius: 5px;
   transition: 0.4s;
 }
 
 .next-btn:hover {
-  background-color: gray;
+  background-color: #50727B;
 }
 
 
@@ -292,7 +342,7 @@ ul li a:hover {
 
 .button-home {
   padding: 10px;
-  background-color: rgb(170, 170, 170);
+  background-color: #78A083;
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -300,7 +350,7 @@ ul li a:hover {
 }
 
 .button-home:hover {
-  background-color: gray;
+  background-color: #50727B;
 }
 
 /* about page*/
@@ -313,16 +363,16 @@ ul li a:hover {
 
 .button-about a {
   text-decoration: none;
-  padding: 8px;
-  background-color: rgb(170, 170, 170);
+  padding: 10px 25px;
+  background-color: #78A083;
   color: white;
-  border-radius: 4px;
-  border: 1px solid gray;
+  border-radius: 50px;
+/*  border: 1px solid gray;*/
   transition: 0.4s;
 }
 
 .button-about a:hover {
-  background-color: gray;
+  background-color: #50727B;
 }
 
 .wrapper-ab {
@@ -413,14 +463,14 @@ ul li a:hover {
   text-decoration: none;
   padding: 7px;
   color: white;
-  background-color: rgb(170, 170, 170);
+  background-color: #78A083;
   border: 1px solid gray;
   border-radius: 4px;
   transition: 0.4s;
 }
 
 .wrapper-event a:hover {
-  background-color: gray;
+  background-color: #50727B;;
 }
 
 /* FOOTER */
@@ -429,8 +479,8 @@ footer {
   /* width: 204vh; */
   width: 100%;
   height: 10vh;
-  background-color: #171717;
-  color: #ecebeb;
+  background-color: #35374B;
+  color: white;
   display: flex;
   flex-direction: column;
   /* padding: 20px; */
@@ -466,7 +516,7 @@ footer {
 }
 
 .wrapper-cp h4 {
-  color: #383d38;
+  color: #E4EFE7;
 }
 /*  RESNPONSIVE */
 
@@ -475,13 +525,14 @@ footer {
 
 
 .nav-res-container {
-  top: -100%;
+/*  top: -100%;*/
   transition: 0.4s ease-in-out;
   /* position: fixed;
   bottom: 20px; */
   display: none; 
   /* opacity: 0; */
   height: 0%;
+  width: 100%;
   justify-content: center;
 }
 
@@ -494,14 +545,14 @@ footer {
   /* border: none; */
   border-bottom: 1px solid gray;
   width: 100% ;
-  height: 100px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #ffffff;
   /* border: none; */
   padding-bottom: 20px;
-  /* overflow: hidden; */
+  overflow: hidden; 
 }
 
 .nav-res-nav img {
@@ -518,10 +569,9 @@ footer {
   padding: 10px;
 }
 
-.nav-res-li a {
+.nav-res-li {
   padding: 5px;
 }
-
 
 
 /* MAIN PAGE RESPONSIVE */
@@ -547,11 +597,11 @@ footer {
 }
 
 .list-main.resp .an {
-  padding: 7px;
-  background-color: #87A922;
-  border-radius: 2px;
-  border: 1px solid white;
-  color: rgb(255, 255, 255);
+  padding: 10px;
+  background-color: #78A083;
+  border-radius: 3px;
+  border: 1px solid #344955;
+  color: white;
   /* font: 25px; */
   text-decoration: none;
   transition: 0.4s;
@@ -559,8 +609,8 @@ footer {
 
 .list-main.resp .an:hover {
   border: 1px solid rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-  background-color: #495b12;
+  color: white;
+  background-color: #344955;
 }
 
 /*  */
