@@ -477,50 +477,101 @@ nav {
 
 footer {
   /* width: 204vh; */
+  padding-top: 20px;
   width: 100%;
-  height: 10vh;
+  height: auto;
   background-color: #35374B;
   color: white;
-  display: flex;
-  flex-direction: column;
-  /* padding: 20px; */
-  /* padding: 10px; */
 }
 
-/* .flex-footer {
+.container-list-footer {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 80%;
+  justify-content: center;
 }
 
-.flex-footer div {
-  width: 330px;
-  margin-bottom: 30px;
-} */
+.container-footer {
+  width: 100%;
+}
 
-/* .gr {
-  width: 33%;
-} */
+.wrapper-title-footer {
+/*  width: 90%;*/
+  display: flex;
+/*  padding: 20px;*/
+  justify-content: center;
+  text-align: center;
+}
 
-/* .anggota {
-  /* text-align: center; */
-/* } */
+.logo-title {
+  display: flex;
+
+}
+
+.logo-title img {
+  position: relative;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+}
+
 .wrapper-cp {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #35374B;
 }
 
-.wrapper-cp h4 {
-  color: #E4EFE7;
+.wrapper-cp h6 {
+  color: gray;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 20px;
+
+}
+
+.flex ul {
+   list-style: none;
+
+}
+
+.flex a, .flex li {
+  color: gray;
+  text-decoration: none;
+  padding: 4px;
+  transition: 0.3s;
+}
+
+.flex a:hover {
+  color: white;
+}
+
+.wrapper-list-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 /*  RESNPONSIVE */
 
 /* NAVBAR RESNPONSIVE */
+
+.description {
+  text-align: center;
+  width: 100%;
+  display: flex;
+/*  flex-direction: column;*/
+  justify-content: center;
+}
+
+.wrapper-footer {
+  width: 70%;
+}
 
 
 
