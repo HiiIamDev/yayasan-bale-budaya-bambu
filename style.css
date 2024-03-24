@@ -444,7 +444,7 @@ nav {
 
 }
 
-.event .text-event {
+.text-event {
   padding: 10px;
 }
 
@@ -469,7 +469,7 @@ nav {
 }
 
 .wrapper-event a:hover {
-  background-color: #50727B;;
+  background-color: #50727B;
 }
 
 /* FOOTER */
@@ -594,8 +594,12 @@ footer {
   width: auto;
   padding: 3px;
   margin: 10px;
-  border: 3px solid #78A083;
+  border: 2px solid #78A083; 
   border-radius: 30px;
+}
+
+.wp-btn-s {
+  margin-bottom: 20px;
 }
 
 .btn-switch {
@@ -633,17 +637,14 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #78A083;
-  color: white;
+/*  background-color: #78A083;*/
+  color: black;
   display: none;
   animation: move 1s;
 }
 
 .gallery-list-1.act, .gallery-list-2.act {
   display: flex;
-}
-.content-gallery {
-  width: 100%;
 }
 
 
