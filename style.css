@@ -647,6 +647,86 @@ footer {
   display: flex;
 }
 
+/*contact pages*/
+
+.contact {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+.container-contact {
+  width: 90%;
+  padding: 1px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.title-contact {
+  padding: 8px;
+}
+
+.hr-contact {
+  background-color: gray;
+  width: 95%;
+  height: 1px;
+}
+
+.wrapper-hr-contact {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.span-cnt {
+  background-color: #78A083;
+  width: 15%;
+  border-radius: 2px;
+  height: 2px;
+  transform: translateY(-0.5px);
+}
+
+.content-contact {
+  display: flex;
+/*  flex-direction: column;*/
+/*  width: 100%;*/
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content-contact a {
+  padding: 6px;
+  margin: 5px;
+  border-radius: 2px;
+/*  width: 100%;*/
+  width: 120px;
+  text-decoration: none;
+  color: white;
+  background-color: #78A083;
+  transition: 0.3s;
+}
+
+.content-contact a:hover {
+  background-color: #50727B;
+}
+
+.wrapper-contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
 
 /*  RESNPONSIVE */
 
@@ -763,6 +843,13 @@ footer {
         height: 80vh;
       }
 } */
+
+@media screen and (min-width: 1140spx) {
+  .container-contact {
+    width: 70%;
+/*    display: flex;  */
+  }
+}
 
 @media screen and (max-width: 700px) {
 
